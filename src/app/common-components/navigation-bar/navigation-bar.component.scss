@@ -1,0 +1,15 @@
+@import "../../../styles.scss";
+
+.nb-container{
+  @include full-relative;
+  .nb-active{
+    color: red;
+    text-decoration-line: underline;
+  }
+  a{
+    color: blue;
+    text-decoration-line: none;
+    @include full-flex(100%,10%);
+    text-align: center;
+  }
+}

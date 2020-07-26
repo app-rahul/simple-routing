@@ -1,5 +1,18 @@
 @import "../../styles.scss";
 
 .ml-container{
-  @include full-flex;
+  @include full-relative;
+
+  .ml-nav-container{
+    @include full-relative(10%);
+    overflow: hidden;
+  }
+  .ml-body-container{
+    @include full-flex(85%);
+    overflow: auto;
+  }
+  .ml-footer-container{
+    @include full-relative(5%);
+    overflow: hidden;
+  }
 }
