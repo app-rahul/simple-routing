@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  min-width: 500;
+  min-height: 400;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin full-relative($height:100%,$width:100%) {
+  position: relative;
+  height: $height;
+  width: $width;
+  float: left;
+}
+
+@mixin full-flex($height:100%,$width:100%,$isFlex: true) {
+  @include full-relative($height, $width);
+  @if($isFlex){
+    @include flex-center;
+  }
+  @else{
+    display: block;
+  }
+}

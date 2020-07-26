@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NotFoundComponent } from './common-components/not-found/not-found.component';
+import { MasterLayoutComponent } from './master-layout/master-layout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotFoundComponent,
+    MasterLayoutComponent
   ],
   imports: [
     BrowserModule,
