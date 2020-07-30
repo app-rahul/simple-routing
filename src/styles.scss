@@ -30,3 +30,9 @@ html, body{
     display: block;
   }
 }
+
+@mixin ellipse-me {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

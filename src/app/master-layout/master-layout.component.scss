@@ -2,17 +2,18 @@
 
 .ml-container{
   @include full-relative;
-
+  background-color: #cecece;
   .ml-nav-container{
     @include full-relative(10%);
     overflow: hidden;
   }
   .ml-body-container{
-    @include full-flex(85%);
+    @include full-relative(85%);
     overflow: auto;
   }
   .ml-footer-container{
     @include full-relative(5%);
     overflow: hidden;
+    background-color: #b8c0e6;
   }
 }

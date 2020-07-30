@@ -2,14 +2,33 @@
 
 .nb-container{
   @include full-relative;
-  .nb-active{
-    color: red;
-    text-decoration-line: underline;
+  background-color: slategray;
+  .logo{
+    @include full-relative(100%,5%);
+    background: url("~src/assets/angular.svg") no-repeat center;
   }
-  a{
-    color: blue;
-    text-decoration-line: none;
+  .nav-bar{
+    @include full-relative(100%,85%);
+    .active{
+      font-size: 1.1em;
+      color: white;
+      background-color:rgb(106, 106, 119,0.8);
+    }
+    a{
+      @include full-flex(100%,10%);
+      @include ellipse-me;
+      text-decoration-line: none;
+      text-align: center;
+      color: bisque;
+      &:hover{
+        background-color:rgb(106, 106, 119);
+      }
+    }
+  }
+  .option{
     @include full-flex(100%,10%);
-    text-align: center;
+    button{
+      @include ellipse-me;
+    }
   }
 }

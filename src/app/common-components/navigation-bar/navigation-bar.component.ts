@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationBarComponent implements OnInit {
 
+  public navigationMenu = [
+    { displayName: 'Home', name: 'home', path: 'home'},
+    { displayName: 'About', name: 'about', path: 'about'},
+    { displayName: 'Setting', name: 'setting', path: 'setting'},
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

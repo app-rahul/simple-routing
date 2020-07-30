@@ -1,5 +1,12 @@
-<nav class="nb-container">
-  <a routerLink='home' routerLinkActive='nb-active'>Home</a>
-  <a routerLink='about' routerLinkActive='nb-active'>About</a>
-  <a routerLink='setting' routerLinkActive='nb-active'>Setting</a>
-</nav>
+<div class="nb-container">
+  <div class="logo"></div>
+  <nav class="nav-bar">
+    <a *ngFor="let menu of navigationMenu" [routerLink]="menu.path" routerLinkActive="active"
+      [style]="{'width':'calc(100% /'+navigationMenu.length+')'}">
+      {{menu.displayName}}
+    </a>
+  </nav>
+  <div class="option">
+    <button>Logout</button>
+  </div>
+</div>
