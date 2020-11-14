@@ -1,4 +1,4 @@
-Welcome To Angular Simple Routing Project.You will find a simple routing solution for kickStarting your angular 10 Project.
+Welcome To Angular Simple Routing Project.You will find a simple routing solution for kickStarting your angular 11 Project.
 
 Description of this version
 Contains simple routing module with three routes, and 2 components created by me.<br/>
